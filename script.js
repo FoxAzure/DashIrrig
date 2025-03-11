@@ -12,5 +12,6 @@ buttons.forEach((button, index) => {
         buttons.forEach(btn => btn.classList.remove('selected'));
         button.classList.add('selected');
         iframe.src = links[index].link;
+        document.title = `Irrigação - ${links[index].name}`;
     });
 });
